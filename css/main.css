@@ -1,0 +1,209 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #12171d;
+  font-family: 'Neris-Black', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+ol,ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  font-family: 'Neris-Black';
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.floating-y {animation-name: floating-y; -webkit-animation-name: floating-y; animation-duration: 1.5s; -webkit-animation-duration: 1.5s; animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;}
+@keyframes floating-y {0% {transform: translateY(0%);} 50% {transform: translateY(20%);} 100% {transform: translateY(0%);}}
+@-webkit-keyframes floating-y {0% {-webkit-transform: translatex(0%);} 50% {-webkit-transform: translateY(20%);} 100% {-webkit-transform: translateY(0%);}}
+
+.floating-x {animation-name: floating-x; -webkit-animation-name: floating-x; animation-duration: 1.5s; -webkit-animation-duration: 1.5s; animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;}
+@keyframes floating-x {0% {transform: translateX(0%);} 50% {transform: translateX(8%);} 100% {transform: translateX(0%);}}
+@-webkit-keyframes floating-x {0% {-webkit-transform: translateX(0%);} 50% {-webkit-transform: translateX(8%);} 100% {-webkit-transform: translateX(0%);}}
+
+/* SECTIONS */
+section {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 100px 50px 100px 50px;
+  position: relative;
+}
+
+section#home {
+  height: 100%;
+  background-image: url(../assets/img/background_space.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#services {
+  background-color: #efefef;
+}
+
+section#team {
+  background-color: #efefef;
+}
+
+section#contact {
+  background-color: #12171d;
+}
+
+.arrow-down {
+  width: 44px;
+  height: 44px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -22px;
+  position: absolute;
+  z-index: 5;
+  background: url(../assets/img/arrow-down.svg) no-repeat;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.active {
+  border-top: 3px solid #24ae5f;
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: transparent;
+  z-index: 10; 
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#logo {
+  width: 100px;
+  margin-top: -10px;
+}
+
+#main_menu {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: auto;
+  display: inline-block;
+  
+}
+
+#main_menu > li {
+  display: inline;
+  margin-left: 70px;
+  font-family: 'Neris-Black';
+}
+
+#main_menu > li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#main_menu > li > a:hover {
+  border-top: 3px solid #24ae5f;
+}
+
+#main_menu > li > a.btn-contact {
+  font-family: 'Neris-SemiBold';
+  text-transform: capitalize;
+  padding: 4px 15px 6px 15px;
+  font-size: 16px;
+  background: transparent;
+  border: 3px solid #24ae5f;
+  color: #24ae5f;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#main_menu > li > a.btn-contact:hover {
+  background: #24ae5f;
+  color: white;
+}
+
+/* HERO */
+#hero {
+  margin-left: 15vw;
+  padding-top: 25vh;
+}
+
+#hero > h1 {
+  color: white;
+  font-family: 'Neris-Black', sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#hero > h1 > p {
+  color: #24ae5f;
+  font-size: 70px;
+  margin: 0;
+}
+
+ul#social_icons > li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+ul#social_icons > li > img {
+  width: 35px;
+}
+
+/* SERVICES */
+#services_container {
+  padding: 70px 0;
+}
+
+.service_item {
+  padding: 20px;
+  text-align: center;
+}
+
+.service_item > img {
+  width: 120px;
+}
+
+.service_item > p {
+  color: #95989A;
+  font-family: 'Neris-SemiBold';
+}
+
+#software_container {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.software_icon {
+  text-align: center;
+}
+
+.software_icon > img {
+  width: 40px;
+}
