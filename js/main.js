@@ -44,6 +44,7 @@ window.onload = function() {
             menuTeam.classList.remove('active');
         }
     }
+    logo.onclick = function() {smoothScroll('home');}
     menuServices.onclick = function () {smoothScroll('services');};
     menuPortfolio.onclick = function () {smoothScroll('portfolio');};
     menuTeam.onclick = function () {smoothScroll('team');};

@@ -107,6 +107,7 @@ section#contact {
 #logo {
   width: 100px;
   margin-top: -10px;
+  cursor: pointer;
 }
 
 #main_menu {
