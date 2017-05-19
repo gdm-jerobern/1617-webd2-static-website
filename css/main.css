@@ -27,6 +27,11 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  color: #95989A;
+  font-family: 'Neris-SemiBold';
+}
+
 .floating-y {animation-name: floating-y; -webkit-animation-name: floating-y; animation-duration: 1.5s; -webkit-animation-duration: 1.5s; animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;}
 @keyframes floating-y {0% {transform: translateY(0%);} 50% {transform: translateY(20%);} 100% {transform: translateY(0%);}}
 @-webkit-keyframes floating-y {0% {-webkit-transform: translatex(0%);} 50% {-webkit-transform: translateY(20%);} 100% {-webkit-transform: translateY(0%);}}
@@ -58,6 +63,7 @@ section#services {
 
 section#team {
   background-color: #efefef;
+  padding: 0;
 }
 
 section#contact {
@@ -190,11 +196,6 @@ ul#social_icons > li > img {
   width: 120px;
 }
 
-.service_item > p {
-  color: #95989A;
-  font-family: 'Neris-SemiBold';
-}
-
 #software_container {
   margin: 0 auto;
   width: 300px;
@@ -206,4 +207,32 @@ ul#social_icons > li > img {
 
 .software_icon > img {
   width: 40px;
+}
+
+/* THE TEAM */
+.team_member {
+  background-color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 30vh 0;
+  text-align: center;
+}
+
+.team_member > img {
+  height: 150px;
+  width: 150px;
+}
+
+.team_member > hr {
+  width: 40%;
+  border: 2px solid #24ae5f;
+}
+
+#contact_icons > li {
+  display: inline;
+  margin-left: 15px;
+}
+
+#contact_icons > li > a > img {
+  width: 30px;
 }
