@@ -36,10 +36,6 @@ h3 {
 @keyframes floating-y {0% {transform: translateY(0%);} 50% {transform: translateY(20%);} 100% {transform: translateY(0%);}}
 @-webkit-keyframes floating-y {0% {-webkit-transform: translatex(0%);} 50% {-webkit-transform: translateY(20%);} 100% {-webkit-transform: translateY(0%);}}
 
-.floating-x {animation-name: floating-x; -webkit-animation-name: floating-x; animation-duration: 1.5s; -webkit-animation-duration: 1.5s; animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite;}
-@keyframes floating-x {0% {transform: translateX(0%);} 50% {transform: translateX(8%);} 100% {transform: translateX(0%);}}
-@-webkit-keyframes floating-x {0% {-webkit-transform: translateX(0%);} 50% {-webkit-transform: translateX(8%);} 100% {-webkit-transform: translateX(0%);}}
-
 /* SECTIONS */
 section {
   width: 100%;
@@ -112,10 +108,10 @@ section#contact {
 }
 
 #main_menu {
+  display: inline;
   position: absolute;
   top: 30px;
   right: 50px;
-  width: auto;
   display: inline-block;
   
 }
@@ -152,6 +148,12 @@ section#contact {
 #main_menu > li > a.btn-contact:hover {
   background: #24ae5f;
   color: white;
+}
+
+@media (max-width: 45rem) {
+  #main_menu {
+    display: none;
+  }
 }
 
 /* HERO */
@@ -237,6 +239,24 @@ ul#social_icons > li > img {
 
 #contact_icons > li > a > img {
   width: 30px;
+}
+
+/* PORTFOLIO */
+#portfolio_container {
+  margin-top: 50px;
+}
+
+.portfolio_item {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 170px;
+  overflow: hidden;
+  background-color: #efefef;
+  border: 3px solid #24ae5f;
+}
+
+.portfolio_item > img {
+  width: 100%;
 }
 
 /* CONTACT */
